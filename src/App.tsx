@@ -16,6 +16,14 @@ export default function App() {
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
+    const hasVisited = sessionStorage.getItem('cosmoLoaded');
+
+    if (hasVisited) {
+      setProgress(100);
+      setIsLoading(false);
+      return;
+    }
+
     const handleLoad = () => {
       let currentProgress = 0;
       const interval = setInterval(() => {
@@ -24,10 +32,12 @@ export default function App() {
         
         if (currentProgress >= 100) {
           clearInterval(interval);
+          sessionStorage.setItem('cosmoLoaded', 'true');
           setTimeout(() => setIsLoading(false), 200);
         }
       }, 15);
     };
+
     if (document.readyState === 'complete') {
       handleLoad();
     } else {
