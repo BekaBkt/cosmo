@@ -13,7 +13,7 @@ export function Hero() {
           loop 
           muted 
           playsInline 
-          className="w-full h-full object-cover opacity-50"
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120vh] h-[100vw] max-w-none rotate-90 md:rotate-0 md:w-full md:h-full object-cover opacity-50"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/40 to-black" />
       </div>
