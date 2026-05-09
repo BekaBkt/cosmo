@@ -26,7 +26,7 @@ export function Hero() {
       >
         <h1 className="text-4xl md:text-6xl lg:text-[5.5rem] font-display font-black leading-[0.9] tracking-normal mb-8 uppercase text-glow">
           Building the <br />
-          next era of apps.
+          next era of apps
         </h1>
         <p className="text-xl md:text-2xl font-display font-medium text-white/40 tracking-normal mb-12 max-w-2xl mx-auto">
           Cosmo is a premium tech studio. We build beautiful, high-performance software that helps people do their best work.
