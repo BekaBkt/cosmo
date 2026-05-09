@@ -25,8 +25,7 @@ export function OzzySection() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="relative max-w-5xl mx-auto aspect-video group mb-12"
-          style={{ clipPath: "inset(0 round 75px)" }}
+          className="relative max-w-5xl mx-auto aspect-video group mb-12 rounded-[32px] md:rounded-[75px] overflow-hidden"
         >
           <Rive
             src="/CosmoAni.riv"
