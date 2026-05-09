@@ -7,12 +7,12 @@ export function Hero() {
     <section className="relative min-h-[120vh] flex flex-col items-center justify-center px-6 overflow-hidden">
       {/* Background Video */}
       <div className="absolute inset-0 overflow-hidden">
-        <video 
-          src={nebulaVideo} 
-          autoPlay 
-          loop 
-          muted 
-          playsInline 
+        <video
+          src={nebulaVideo}
+          autoPlay
+          loop
+          muted
+          playsInline
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120vh] h-[100vw] max-w-none rotate-90 md:rotate-0 md:w-full md:h-full object-cover opacity-50"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/40 to-black" />
@@ -31,18 +31,18 @@ export function Hero() {
         <p className="text-xl md:text-2xl font-display font-medium text-white/40 tracking-normal mb-12 max-w-2xl mx-auto">
           Cosmo is a premium tech studio. We build beautiful, high-performance software that helps people do their best work.
         </p>
-        
+
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
           <button className="btn-primary">
             Our Tech
           </button>
-          <button className="px-8 py-4 rounded-full border border-white/20 font-black uppercase tracking-widest text-sm hover:bg-white/5 transition-all">
+          <button className="px-8 py-4 rounded-[61px] border border-white/20 font-black uppercase tracking-widest text-sm hover:bg-white/5 transition-all">
             Contact Us
           </button>
         </div>
       </motion.div>
 
-      <motion.div 
+      <motion.div
         animate={{ y: [0, 10, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
         className="absolute z-10 bottom-12 flex flex-col items-center gap-2 opacity-20"

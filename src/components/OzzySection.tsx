@@ -25,24 +25,23 @@ export function OzzySection() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="relative max-w-5xl mx-auto aspect-video flex items-center justify-center overflow-hidden group mb-12"
+          className="relative max-w-5xl mx-auto aspect-video group mb-12"
+          style={{ clipPath: "inset(0 round 75px)" }}
         >
-          <div className="relative z-10 w-full h-full">
-            <Rive
-              src="/CosmoAni.riv"
-              stateMachines="State Machine 1"
-              autoplay={true}
-              layout={new Layout({
-                fit: Fit.Contain,
-                alignment: Alignment.Center,
-              })}
-              className="w-full h-full"
-            />
-          </div>
+          <Rive
+            src="/CosmoAni.riv"
+            stateMachines="State Machine 1"
+            autoplay={true}
+            layout={new Layout({
+              fit: Fit.Contain,
+              alignment: Alignment.Center,
+            })}
+            className="w-full h-full"
+          />
         </motion.div>
 
         <div className="flex justify-center">
-          <button className="flex items-center gap-4 px-10 py-5 rounded-full bg-white text-black font-black uppercase tracking-widest text-xs hover:scale-105 active:scale-95 transition-all group shadow-[0_0_40px_rgba(255,255,255,0.2)]">
+          <button className="flex items-center gap-4 px-10 py-5 rounded-[61px] bg-white text-black font-black uppercase tracking-widest text-xs hover:scale-105 active:scale-95 transition-all group shadow-[0_0_40px_rgba(255,255,255,0.2)]">
             Visit Ozzy Website
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </button>

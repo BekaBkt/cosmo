@@ -29,7 +29,7 @@ export default function App() {
       const interval = setInterval(() => {
         currentProgress += 1;
         setProgress(currentProgress);
-        
+
         if (currentProgress >= 100) {
           clearInterval(interval);
           sessionStorage.setItem('cosmoLoaded', 'true');
@@ -49,17 +49,16 @@ export default function App() {
   return (
     <>
       <div
-        className={`fixed inset-0 z-[9999] bg-black flex flex-col items-center justify-center transition-opacity duration-1000 ${
-          isLoading ? "opacity-100" : "opacity-0 pointer-events-none"
-        }`}
+        className={`fixed inset-0 z-[9999] bg-black flex flex-col items-center justify-center transition-opacity duration-1000 ${isLoading ? "opacity-100" : "opacity-0 pointer-events-none"
+          }`}
       >
         <h1 className="text-white text-2xl font-medium tracking-[0.4em] mb-8">
           COSMO
         </h1>
         <div className="w-48 h-[1px] bg-white/20 overflow-hidden">
-          <div 
-            className="h-full bg-white transition-all duration-75 ease-linear" 
-            style={{ width: `${progress}%` }} 
+          <div
+            className="h-full bg-white transition-all duration-75 ease-linear"
+            style={{ width: `${progress}%` }}
           />
         </div>
       </div>
@@ -69,8 +68,8 @@ export default function App() {
         <Navbar />
         <Hero />
         <OzzySection />
-        <Features />
-        <Vision />
+        {/* <Features /> */}
+        {/* <Vision /> */}
         <Waitlist />
       </main>
     </>
