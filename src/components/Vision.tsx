@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { Send, Instagram, Linkedin, Twitter, Globe, Phone, Mail } from "lucide-react";
+import logoUrl from './assets/Cosmo Logo.svg';
 
 export function Vision() {
   return (
@@ -58,6 +59,7 @@ export function Waitlist() {
         <div className="flex flex-col md:flex-row justify-between gap-16 py-20 border-t border-white/5">
           {/* Logo Column */}
           <div className="max-w-sm">
+            <img src={logoUrl} alt="Cosmo Logo" className="h-6 mb-6" />
             <p className="text-white/30 text-xs font-black uppercase tracking-widest leading-loose">
               Cosmo 2026. <br />
             </p>
