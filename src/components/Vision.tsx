@@ -77,12 +77,12 @@ export function Waitlist() {
             </div>
             <div className="flex flex-col space-y-4">
               <h4 className="text-[10px] font-black uppercase tracking-[0.3em] text-white/20 mb-6">Social</h4>
-              {/* Placeholder for X */}
-              <a href="#" className="text-xs font-bold text-white/40 transition-colors hover:text-white">
+              {/* Link for X */}
+              <a href="https://x.com/CosmoCodeStudio" target="_blank" rel="noopener noreferrer" className="text-xs font-bold text-white/40 transition-colors hover:text-white">
                 X (Twitter)
               </a>
-              {/* Placeholder for LinkedIn */}
-              <a href="#" className="text-xs font-bold text-white/40 transition-colors hover:text-white">
+              {/* Link for LinkedIn */}
+              <a href="https://www.linkedin.com/company/cosmo-code/" target="_blank" rel="noopener noreferrer" className="text-xs font-bold text-white/40 transition-colors hover:text-white">
                 LinkedIn
               </a>
             </div>
